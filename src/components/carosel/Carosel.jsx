@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import pic1 from "../../asset/carosel1.jpg";
 import pic2 from "../../asset/carosel3.png";
+import pic3 from "../../asset/carosel2.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -16,7 +17,7 @@ const Carosel = () => {
   }, []);
   return (
     <div>
-      {filter==null>0 ? (
+      {filter == null > 0 ? (
         <section data-aos="zoom-in-right">
           <Carousel
             autoPlay={true}
@@ -32,6 +33,9 @@ const Carosel = () => {
             </div>
             <div id="img" className={styles.img}>
               <img src={pic2} height="100vh" />
+            </div>
+            <div id="img" className={styles.img}>
+              <img src={pic3} height="100vh" />
             </div>
           </Carousel>
         </section>

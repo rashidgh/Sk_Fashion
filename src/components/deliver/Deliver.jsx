@@ -71,8 +71,17 @@ const Deliver = () => {
                 value={deliver}
                 onChange={e => setDeliver(e.target.value)}
               >
-                <input type="radio" name="adress" value={val.id} />
-                <h4>{val.ename}</h4>
+                <input
+                  id={val.ename}
+                  type="radio"
+                  name="adress"
+                  value={val.id}
+                />
+                <h4>
+                  <label htmlFor={val.ename} style={{ cursor: "pointer" }}>
+                    {val.ename}
+                  </label>
+                </h4>
                 <b>{val.phone_no}</b>
                 <strong>{val.email}</strong>
               </div>
